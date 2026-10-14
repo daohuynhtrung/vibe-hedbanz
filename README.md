@@ -4,6 +4,8 @@ An interactive **Hedbanz** game web app in the **Football domain**, built with *
 
 In accordance with [`SPEC.md`](./SPEC.md), this is a 100% front-end only application using exclusively open-source and free resources with **zero external paid APIs, zero backend servers, and zero setup required**.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdaohuynhtrung%2Fvibe-hedbanz)
+
 ---
 
 ## 🎯 Gameplay & Features
