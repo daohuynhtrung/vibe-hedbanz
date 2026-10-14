@@ -25,6 +25,13 @@ export const HeadbandCard: React.FC<HeadbandCardProps> = ({
 }) => {
   const isRevealed = status === 'won' || status === 'given_up';
 
+  // Blur starts at 100% (24px) and gradually reduces with each question asked
+  // Always keeps a blur floor (min 3.5px) so it never becomes completely sharp during guessing
+  const maxBlur = 24;
+  const minBlur = 3.5;
+  const blurValue = Math.max(minBlur, maxBlur * Math.pow(0.83, questionCount));
+  const currentBlurPx = Math.round(blurValue * 10) / 10;
+
   return (
     <div className="w-full flex flex-col items-center">
       {/* Hedbanz Headband Strap */}
@@ -89,37 +96,45 @@ export const HeadbandCard: React.FC<HeadbandCardProps> = ({
 
                 {/* Ambient Blurred Decolorized Background Silhouette */}
                 {player.avatarUrl && (
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
+                  <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20 bg-zinc-950">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={player.avatarUrl}
                       alt="Secret Player Silhouette"
-                      className="w-full h-full object-cover scale-125"
-                      style={{ filter: 'blur(16px) grayscale(100%)' }}
+                      className="w-full h-full object-cover scale-150"
+                      style={{
+                        filter: `blur(${Math.max(8, currentBlurPx + 4)}px) grayscale(100%)`,
+                        transition: 'filter 0.6s cubic-bezier(0.2, 0.8, 0.2, 1)',
+                      }}
                     />
                   </div>
                 )}
 
-                {/* Center Mystery Display with Lightly Blurred & Decolorized Player Photo */}
+                {/* Center Mystery Display with Progressively Unblurring & Decolorized Player Photo */}
                 <div className="flex flex-col items-center justify-center my-auto z-10 text-center">
                   <div className="relative">
-                    {/* Portrait Frame containing the blurred & decolorized player photo */}
+                    {/* Portrait Frame containing the blurred & decolorized player photo (opaque, zero transparency) */}
                     <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden relative border-2 border-amber-400/90 shadow-2xl bg-zinc-950 flex items-center justify-center">
                       {player.avatarUrl ? (
                         <>
-                          {/* Reduced Blur & Decolorized Image */}
+                          {/* Solid backing to ensure zero transparency */}
+                          <div className="absolute inset-0 bg-zinc-950" />
+
+                          {/* Progressively Unblurring Decolorized Image (scale-135 prevents any blur edge transparency) */}
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img
                             src={player.avatarUrl}
                             alt="Mystery Footballer Clue"
-                            className="w-full h-full object-cover scale-110 select-none pointer-events-none"
+                            className="w-full h-full object-cover scale-135 select-none pointer-events-none relative z-0"
                             style={{
-                              filter: 'blur(5px) grayscale(100%) brightness(0.95) contrast(1.15)',
+                              filter: `blur(${currentBlurPx}px) grayscale(100%) brightness(0.95) contrast(1.15)`,
+                              opacity: 1,
+                              transition: 'filter 0.6s cubic-bezier(0.2, 0.8, 0.2, 1)',
                             }}
                           />
                           {/* Corner Mystery Question Badge */}
-                          <div className="absolute top-2 right-2 pointer-events-none">
-                            <div className="w-7 h-7 rounded-full bg-black/70 backdrop-blur-md border border-amber-400/80 flex items-center justify-center shadow-lg">
+                          <div className="absolute top-2 right-2 pointer-events-none z-10">
+                            <div className="w-7 h-7 rounded-full bg-black/75 backdrop-blur-md border border-amber-400/80 flex items-center justify-center shadow-lg">
                               <HelpCircle className="w-4 h-4 text-amber-300 stroke-[2.5]" />
                             </div>
                           </div>
@@ -136,11 +151,11 @@ export const HeadbandCard: React.FC<HeadbandCardProps> = ({
                   <h3 className="mt-3.5 text-xl sm:text-2xl font-black tracking-tight text-amber-200">
                     WHO AM I?
                   </h3>
-                  <div className="inline-block mt-1 px-2.5 py-0.5 rounded-full bg-white/10 backdrop-blur text-[10px] font-semibold text-zinc-300 border border-white/10">
-                    Blurred Clue Above 🔍
+                  <div className="inline-flex items-center gap-1 mt-1 px-2.5 py-0.5 rounded-full bg-black/40 backdrop-blur text-[10px] font-semibold text-amber-300 border border-amber-400/30">
+                    <span>{questionCount === 0 ? '🔒 100% Blur Clue' : `🔍 Unblurring (${currentBlurPx}px)`}</span>
                   </div>
                   <p className="text-xs text-zinc-300 max-w-[210px] mt-1 font-medium">
-                    Ask Yes/No questions in the chat to discover my identity!
+                    Ask questions to sharpen the clue!
                   </p>
 
                   {/* Peek Mode for testing or party host */}
