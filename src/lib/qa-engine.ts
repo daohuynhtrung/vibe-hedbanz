@@ -390,6 +390,10 @@ export function answerQuestion(rawQuery: string, player: Footballer): QAResult {
     sweden: { country: 'Sweden', adj: ['sweden', 'swedish'] },
     wales: { country: 'Wales', adj: ['wales', 'welsh'] },
     ivory_coast: { country: 'Ivory Coast', adj: ['ivory coast', 'ivorian', 'cote divoire'] },
+    morocco: { country: 'Morocco', adj: ['morocco', 'moroccan'] },
+    nigeria: { country: 'Nigeria', adj: ['nigeria', 'nigerian'] },
+    georgia: { country: 'Georgia', adj: ['georgia', 'georgian'] },
+    canada: { country: 'Canada', adj: ['canada', 'canadian'] },
   };
 
   for (const info of Object.values(countryMap)) {
@@ -549,7 +553,14 @@ export function answerQuestion(rawQuery: string, player: Footballer): QAResult {
     { name: 'Santos', aliases: ['santos'] },
     { name: 'Boca Juniors', aliases: ['boca juniors', 'boca'] },
     { name: 'Roma', aliases: ['roma', 'as roma'] },
-    { name: 'Napoli', aliases: ['napoli'] },
+    { name: 'Napoli', aliases: ['napoli', 'partenopei'] },
+    { name: 'Bayer Leverkusen', aliases: ['bayer leverkusen', 'leverkusen'] },
+    { name: 'Aston Villa', aliases: ['aston villa', 'villa'] },
+    { name: 'Galatasaray', aliases: ['galatasaray', 'cimbom'] },
+    { name: 'West Ham', aliases: ['west ham', 'west ham united', 'hammers'] },
+    { name: 'Leicester City', aliases: ['leicester', 'leicester city', 'foxes'] },
+    { name: 'Ajax', aliases: ['ajax', 'afc ajax'] },
+    { name: 'Al-Ittihad', aliases: ['al-ittihad', 'al ittihad', 'ittihad'] },
   ];
 
   for (const cl of clubs) {
