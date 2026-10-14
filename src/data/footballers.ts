@@ -38,6 +38,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Won 8 Ballon d\'Or awards', 'Won the 2022 FIFA World Cup in Qatar', 'Scored 91 goals in a single calendar year (2012)'],
     rating: 90,
     cardColor: 'from-amber-400 to-sky-500',
+    avatarUrl: 'https://media.api-sports.io/football/players/154.png',
   },
   {
     id: 'ronaldo',
@@ -76,6 +77,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Won 5 Champions League titles and 5 Ballon d\'Or awards', 'All-time top international goalscorer in men\'s football', 'Famous for his iconic SIUUU celebration'],
     rating: 86,
     cardColor: 'from-amber-500 to-red-600',
+    avatarUrl: 'https://media.api-sports.io/football/players/874.png',
   },
   {
     id: 'haaland',
@@ -114,6 +116,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Broke the single-season Premier League scoring record with 36 goals in his debut season', 'Won the continental Treble with Manchester City in 2023'],
     rating: 91,
     cardColor: 'from-sky-400 to-blue-600',
+    avatarUrl: 'https://media.api-sports.io/football/players/1100.png',
   },
   {
     id: 'mbappe',
@@ -152,6 +155,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Scored a hat-trick in the 2022 World Cup Final', 'Won the FIFA World Cup in 2018 at just 19 years old', 'Joined Real Madrid in summer 2024'],
     rating: 91,
     cardColor: 'from-blue-600 to-indigo-800',
+    avatarUrl: 'https://media.api-sports.io/football/players/278.png',
   },
   {
     id: 'bellingham',
@@ -190,6 +194,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Won La Liga and UEFA Champions League in his debut season with Real Madrid', 'Iconic open-arms celebration in front of the Bernabéu'],
     rating: 90,
     cardColor: 'from-amber-300 to-yellow-600',
+    avatarUrl: 'https://media.api-sports.io/football/players/152982.png',
   },
   {
     id: 'vinicius',
@@ -228,6 +233,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Scored winning goals in Champions League finals (2022 vs Liverpool, 2024 vs Dortmund)', 'Wears the historic number 7 jersey for Real Madrid'],
     rating: 90,
     cardColor: 'from-emerald-400 to-green-600',
+    avatarUrl: 'https://media.api-sports.io/football/players/762.png',
   },
   {
     id: 'debruyne',
@@ -266,6 +272,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Widely considered one of the greatest playmakers in Premier League history', 'Won multiple Premier League Player of the Season awards'],
     rating: 90,
     cardColor: 'from-sky-500 to-cyan-700',
+    avatarUrl: 'https://media.api-sports.io/football/players/629.png',
   },
   {
     id: 'salah',
@@ -304,6 +311,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Liverpool\'s all-time Premier League top goalscorer', 'Won the Champions League and Premier League with Liverpool'],
     rating: 89,
     cardColor: 'from-red-600 to-rose-800',
+    avatarUrl: 'https://media.api-sports.io/football/players/306.png',
   },
   {
     id: 'kane',
@@ -342,6 +350,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['All-time record goalscorer for the England national team and Tottenham Hotspur', 'Won the 2018 FIFA World Cup Golden Boot'],
     rating: 90,
     cardColor: 'from-red-500 to-red-800',
+    avatarUrl: 'https://media.api-sports.io/football/players/184.png',
   },
   {
     id: 'lewandowski',
@@ -380,6 +389,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Scored 5 goals in 9 minutes as a substitute for Bayern Munich in 2015', 'Broke Gerd Müller\'s Bundesliga single-season record with 41 goals in 2020-21'],
     rating: 88,
     cardColor: 'from-blue-700 to-red-700',
+    avatarUrl: 'https://media.api-sports.io/football/players/521.png',
   },
   {
     id: 'modric',
@@ -418,6 +428,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Won the 2018 Ballon d\'Or, breaking the decade-long Messi-Ronaldo duopoly', 'Won a record 6 UEFA Champions League trophies with Real Madrid'],
     rating: 86,
     cardColor: 'from-blue-500 to-indigo-600',
+    avatarUrl: 'https://media.api-sports.io/football/players/754.png',
   },
   {
     id: 'rodri',
@@ -456,6 +467,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Won the 2024 Ballon d\'Or', 'Scored the winning goal in the 2023 Champions League final', 'Won Euro 2024 Player of the Tournament'],
     rating: 91,
     cardColor: 'from-amber-400 to-yellow-600',
+    avatarUrl: 'https://media.api-sports.io/football/players/44.png',
   },
   {
     id: 'kroos',
@@ -494,6 +506,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Won 6 Champions League titles (1 with Bayern, 5 with Real Madrid)', 'Won the 2014 World Cup with Germany', 'Retired at the top of his game in 2024 after winning UCL'],
     rating: 90,
     cardColor: 'from-slate-400 to-slate-700',
+    avatarUrl: 'https://media.api-sports.io/football/players/742.png',
   },
   {
     id: 'neymar',
@@ -532,6 +545,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Brazil\'s all-time joint top goalscorer alongside Pelé', 'Most expensive transfer in football history (€222M to PSG)', 'Part of the legendary MSN trio with Messi and Suarez'],
     rating: 87,
     cardColor: 'from-yellow-400 to-emerald-600',
+    avatarUrl: 'https://media.api-sports.io/football/players/276.png',
   },
   {
     id: 'vandijk',
@@ -570,6 +584,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Runner up for the 2019 Ballon d\'Or by only 7 points to Lionel Messi', 'Captain of both Liverpool and the Netherlands national team'],
     rating: 89,
     cardColor: 'from-orange-500 to-red-700',
+    avatarUrl: 'https://media.api-sports.io/football/players/290.png',
   },
   {
     id: 'saka',
@@ -608,6 +623,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Known affectionately as "Starboy" by Arsenal and England fans', 'England Men\'s Player of the Year multiple times'],
     rating: 87,
     cardColor: 'from-red-500 to-rose-700',
+    avatarUrl: 'https://media.api-sports.io/football/players/1468.png',
   },
   {
     id: 'yamal',
@@ -646,6 +662,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Youngest ever goalscorer in UEFA European Championship history at 16', 'Won UEFA Euro 2024 and Young Player of the Tournament'],
     rating: 83,
     cardColor: 'from-blue-600 to-red-600',
+    avatarUrl: 'https://media.api-sports.io/football/players/382343.png',
   },
   {
     id: 'palmer',
@@ -684,6 +701,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Famous for his shivering "Cold Palmer" celebration', 'Scored 4 goals in the first half of a Premier League match in 2024'],
     rating: 85,
     cardColor: 'from-blue-500 to-indigo-700',
+    avatarUrl: 'https://media.api-sports.io/football/players/153430.png',
   },
   {
     id: 'son',
@@ -722,6 +740,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Won the Premier League Golden Boot in 2021-22 with zero penalties', 'Won the 2020 FIFA Puskas Award for a solo goal against Burnley'],
     rating: 87,
     cardColor: 'from-blue-700 to-slate-900',
+    avatarUrl: 'https://media.api-sports.io/football/players/186.png',
   },
   {
     id: 'neuer',
@@ -760,6 +779,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Revolutionized the modern goalkeeper role with his sweeper-keeper style', 'Won the 2014 World Cup Golden Glove and finished 3rd in Ballon d\'Or'],
     rating: 86,
     cardColor: 'from-emerald-600 to-teal-800',
+    avatarUrl: 'https://media.api-sports.io/football/players/502.png',
   },
   {
     id: 'alisson',
@@ -798,6 +818,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Inaugural winner of the Yashin Trophy for world\'s best goalkeeper', 'Scored a dramatic 95th-minute headed winner against West Brom in 2021'],
     rating: 89,
     cardColor: 'from-emerald-700 to-green-900',
+    avatarUrl: 'https://media.api-sports.io/football/players/282.png',
   },
   {
     id: 'courtois',
@@ -836,6 +857,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Man of the Match in the 2022 Champions League Final making 9 saves against Liverpool', 'Stands at 2.00m (6 ft 7 in)'],
     rating: 89,
     cardColor: 'from-yellow-600 to-amber-800',
+    avatarUrl: 'https://media.api-sports.io/football/players/733.png',
   },
   {
     id: 'pele',
@@ -874,6 +896,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Only player in football history to win 3 FIFA World Cups (1958, 1962, 1970)', 'Scored over 1,000 career goals'],
     rating: 98,
     cardColor: 'from-amber-400 to-yellow-600',
+    avatarUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Pele_con_brasil_%28cropped%29.jpg/330px-Pele_con_brasil_%28cropped%29.jpg',
   },
   {
     id: 'maradona',
@@ -912,6 +935,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Captained Argentina to 1986 World Cup triumph, scoring "Hand of God" and "Goal of the Century"', 'Hero of Napoli, leading them to their first two Serie A titles'],
     rating: 97,
     cardColor: 'from-sky-500 to-blue-700',
+    avatarUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Argentina_celebrando_copa_%28cropped%29.jpg/330px-Argentina_celebrando_copa_%28cropped%29.jpg',
   },
   {
     id: 'zidane',
@@ -950,6 +974,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Scored famous volley against Bayer Leverkusen in the 2002 Champions League final', 'Infamous headbutt on Marco Materazzi in the 2006 World Cup final', 'Won the 1998 World Cup and 1998 Ballon d\'Or'],
     rating: 96,
     cardColor: 'from-indigo-600 to-blue-900',
+    avatarUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg/330px-Zinedine_Zidane_by_Tasnim_03.jpg',
   },
   {
     id: 'ronaldinho',
@@ -988,6 +1013,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Received a standing ovation from Real Madrid fans at the Santiago Bernabéu', 'Won the 2002 World Cup, 2005 Ballon d\'Or, and 2006 Champions League'],
     rating: 94,
     cardColor: 'from-yellow-500 to-amber-700',
+    avatarUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Ronaldinho_in_2019.jpg/330px-Ronaldinho_in_2019.jpg',
   },
   {
     id: 'r9',
@@ -1026,6 +1052,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Youngest ever Ballon d\'Or winner at age 21 in 1997', 'Scored 8 goals in the 2002 World Cup including two in the final', 'Played for both Barcelona and Real Madrid, and both Inter and AC Milan'],
     rating: 96,
     cardColor: 'from-yellow-500 to-emerald-700',
+    avatarUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/12.12.2025_%E2%80%93_Cerim%C3%B4nia_de_lan%C3%A7amento_do_SBT_News_-_54980664160_%28cropped2%29.jpg/330px-12.12.2025_%E2%80%93_Cerim%C3%B4nia_de_lan%C3%A7amento_do_SBT_News_-_54980664160_%28cropped2%29.jpg',
   },
   {
     id: 'henry',
@@ -1064,6 +1091,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Key member of Arsenal\'s 2003-04 "Invincibles" who went unbeaten in the Premier League', 'Arsenal\'s all-time record goalscorer with 228 goals'],
     rating: 93,
     cardColor: 'from-red-600 to-stone-800',
+    avatarUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Thierry_Henry_%2851649035951%29_%28cropped%29.jpg/330px-Thierry_Henry_%2851649035951%29_%28cropped%29.jpg',
   },
   {
     id: 'iniesta',
@@ -1102,6 +1130,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Scored the winning goal in the 116th minute of the 2010 World Cup Final against Netherlands', 'Won 4 Champions Leagues and 9 La Liga titles with Barcelona'],
     rating: 92,
     cardColor: 'from-rose-600 to-indigo-800',
+    avatarUrl: 'https://media.api-sports.io/football/players/2974.png',
   },
   {
     id: 'maldini',
@@ -1140,6 +1169,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['One-club man who spent all 25 seasons of his career at AC Milan', 'Won 5 European Cup / Champions League titles and 7 Serie A titles'],
     rating: 95,
     cardColor: 'from-red-600 to-black',
+    avatarUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Paolo_Maldini_AC_Milan_Technical_director_2018.jpg/330px-Paolo_Maldini_AC_Milan_Technical_director_2018.jpg',
   },
   {
     id: 'buffon',
@@ -1178,6 +1208,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Conceded only 2 goals in entire 2006 World Cup (an own goal and a penalty)', 'Played professional football across four different decades (1995-2023)'],
     rating: 93,
     cardColor: 'from-blue-600 to-slate-800',
+    avatarUrl: 'https://media.api-sports.io/football/players/777.png',
   },
   {
     id: 'beckham',
@@ -1216,6 +1247,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Famous for his pinpoint free kicks and crossing ability ("Bend It Like Beckham")', 'Won league titles in four different countries: England, Spain, USA, and France'],
     rating: 88,
     cardColor: 'from-rose-500 to-sky-700',
+    avatarUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/David_Beckham_UNICEF_%28cropped2%29.jpg/330px-David_Beckham_UNICEF_%28cropped2%29.jpg',
   },
   {
     id: 'suarez',
@@ -1254,6 +1286,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Won two European Golden Shoes during the peak Messi and Ronaldo era', 'Part of Barcelona\'s treble-winning MSN frontline'],
     rating: 84,
     cardColor: 'from-sky-400 to-amber-600',
+    avatarUrl: 'https://media.api-sports.io/football/players/157.png',
   },
   {
     id: 'ibrahimovic',
@@ -1292,6 +1325,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Scored an iconic 30-yard overhead bicycle kick against England in 2012', 'Won league titles in 4 different countries and scored over 570 career goals'],
     rating: 90,
     cardColor: 'from-yellow-400 to-blue-700',
+    avatarUrl: 'https://media.api-sports.io/football/players/190.png',
   },
   {
     id: 'kaka',
@@ -1330,6 +1364,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Won the 2007 Ballon d\'Or and FIFA World Player of the Year after leading Milan to UCL glory', 'Part of the 2002 World Cup-winning Brazil squad'],
     rating: 91,
     cardColor: 'from-red-600 to-amber-600',
+    avatarUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Kak%C3%A1_visited_Stadium_St._Petersburg.jpg/330px-Kak%C3%A1_visited_Stadium_St._Petersburg.jpg',
   },
   {
     id: 'gerrard',
@@ -1368,6 +1403,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Led the legendary comeback from 3-0 down in the 2005 Champions League final in Istanbul', 'Only player to score in a FA Cup, League Cup, UEFA Cup, and Champions League final'],
     rating: 89,
     cardColor: 'from-red-700 to-red-950',
+    avatarUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Steven_Gerrard_2018.jpg/330px-Steven_Gerrard_2018.jpg',
   },
   {
     id: 'rooney',
@@ -1406,6 +1442,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Manchester United\'s all-time record goalscorer with 253 goals', 'Scored that famous bicycle kick against Manchester City in 2011'],
     rating: 91,
     cardColor: 'from-red-600 to-slate-900',
+    avatarUrl: 'https://media.api-sports.io/football/players/882.png',
   },
   {
     id: 'bale',
@@ -1444,6 +1481,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Scored an unbelievable overhead bicycle kick in the 2018 Champions League final', 'Won 5 Champions League trophies with Real Madrid', 'Led Wales to Euro 2016 semi-finals'],
     rating: 88,
     cardColor: 'from-red-600 to-emerald-700',
+    avatarUrl: 'https://media.api-sports.io/football/players/738.png',
   },
   {
     id: 'casillas',
@@ -1482,6 +1520,7 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Captained Spain to consecutive Euros (2008, 2012) and their first World Cup (2010)', 'Crucial foot save against Arjen Robben in the 2010 World Cup final'],
     rating: 92,
     cardColor: 'from-amber-500 to-yellow-700',
+    avatarUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Iker-Casillas-SportsTrade-2021-cropped.jpg/330px-Iker-Casillas-SportsTrade-2021-cropped.jpg',
   },
   {
     id: 'drogba',
@@ -1520,5 +1559,6 @@ export const FOOTBALLERS: Footballer[] = [
     funFacts: ['Scored 10 goals in 10 cup finals for Chelsea', 'Scored 88th minute equalizer and winning penalty in 2012 Champions League final in Munich'],
     rating: 90,
     cardColor: 'from-orange-500 to-emerald-700',
+    avatarUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Didier_Drogba_%282019%29_%28cropped2%29.jpg/330px-Didier_Drogba_%282019%29_%28cropped2%29.jpg',
   },
 ];

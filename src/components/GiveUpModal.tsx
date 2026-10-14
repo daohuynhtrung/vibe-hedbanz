@@ -64,12 +64,26 @@ export const GiveUpModal: React.FC<GiveUpModalProps> = ({
               The Secret Footballer Was
             </span>
 
-            <h2 className="text-2xl font-black text-amber-300 mt-1">
-              {player.name}
-            </h2>
-
-            <div className="text-sm text-zinc-300 mt-1">
-              {player.currentClub} • {player.nationality}
+            {/* Player Avatar Thumbnail */}
+            <div className="flex items-center gap-3 bg-zinc-800/80 border border-zinc-700 rounded-2xl p-2.5 mt-2 w-full max-w-xs shadow">
+              {player.avatarUrl && (
+                <div className="w-14 h-14 rounded-xl overflow-hidden bg-zinc-950 border border-zinc-700 shrink-0">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={player.avatarUrl}
+                    alt={player.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              )}
+              <div className="text-left">
+                <h3 className="text-base font-black text-amber-300 leading-tight uppercase">
+                  {player.name}
+                </h3>
+                <p className="text-xs text-zinc-400 font-medium">
+                  {player.currentClub} • {player.nationality}
+                </p>
+              </div>
             </div>
 
             {/* Fact card */}

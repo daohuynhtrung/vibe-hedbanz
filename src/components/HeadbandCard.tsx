@@ -87,25 +87,65 @@ export const HeadbandCard: React.FC<HeadbandCardProps> = ({
                   </div>
                 </div>
 
-                {/* Center Mystery Display */}
+                {/* Ambient Blurred Decolorized Background Silhouette */}
+                {player.avatarUrl && (
+                  <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={player.avatarUrl}
+                      alt="Secret Player Silhouette"
+                      className="w-full h-full object-cover scale-150"
+                      style={{ filter: 'blur(28px) grayscale(100%)' }}
+                    />
+                  </div>
+                )}
+
+                {/* Center Mystery Display with Highly Blurred & Decolorized Player Photo */}
                 <div className="flex flex-col items-center justify-center my-auto z-10 text-center">
                   <div className="relative">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-amber-500 to-yellow-300 flex items-center justify-center shadow-lg shadow-amber-500/30 animate-bounce" style={{ animationDuration: '3s' }}>
-                      <HelpCircle className="w-14 h-14 text-zinc-950 stroke-[2.5]" />
+                    {/* Portrait Frame containing the blurred & decolorized player photo */}
+                    <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden relative border-2 border-amber-400/90 shadow-2xl bg-zinc-950 flex items-center justify-center">
+                      {player.avatarUrl ? (
+                        <>
+                          {/* Highly Blurred & Decolorized Image */}
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={player.avatarUrl}
+                            alt="Mystery Footballer Clue"
+                            className="w-full h-full object-cover scale-125 select-none pointer-events-none"
+                            style={{
+                              filter: 'blur(14px) grayscale(100%) brightness(0.85) contrast(1.25)',
+                            }}
+                          />
+                          {/* Mystery Question Overlay Icon */}
+                          <div className="absolute inset-0 flex items-center justify-center pointer-events-none bg-black/20">
+                            <div className="w-11 h-11 rounded-full bg-black/60 backdrop-blur-sm border border-amber-400/80 flex items-center justify-center shadow-lg">
+                              <HelpCircle className="w-6 h-6 text-amber-300 stroke-[2.5]" />
+                            </div>
+                          </div>
+                        </>
+                      ) : (
+                        <div className="w-full h-full bg-gradient-to-tr from-amber-500 to-yellow-300 flex items-center justify-center">
+                          <HelpCircle className="w-14 h-14 text-zinc-950 stroke-[2.5]" />
+                        </div>
+                      )}
                     </div>
-                    <span className="absolute -bottom-1 -right-1 text-2xl">⚽</span>
+                    <span className="absolute -bottom-1 -right-1 text-2xl drop-shadow">⚽</span>
                   </div>
 
-                  <h3 className="mt-4 text-xl sm:text-2xl font-black tracking-tight text-amber-200">
+                  <h3 className="mt-3.5 text-xl sm:text-2xl font-black tracking-tight text-amber-200">
                     WHO AM I?
                   </h3>
-                  <p className="text-xs text-zinc-300 max-w-[200px] mt-1 font-medium">
+                  <div className="inline-block mt-1 px-2.5 py-0.5 rounded-full bg-white/10 backdrop-blur text-[10px] font-semibold text-zinc-300 border border-white/10">
+                    Blurred Clue Above 🔍
+                  </div>
+                  <p className="text-xs text-zinc-300 max-w-[210px] mt-1 font-medium">
                     Ask Yes/No questions in the chat to discover my identity!
                   </p>
 
                   {/* Peek Mode for testing or party host */}
                   {peekSecret && (
-                    <div className="mt-3 px-3 py-1.5 bg-red-950/80 border border-red-500/60 rounded-lg text-xs font-bold text-red-200 animate-pulse">
+                    <div className="mt-2.5 px-3 py-1.5 bg-red-950/80 border border-red-500/60 rounded-lg text-xs font-bold text-red-200 animate-pulse">
                       🤫 Secret: {player.name}
                     </div>
                   )}
@@ -174,13 +214,24 @@ export const HeadbandCard: React.FC<HeadbandCardProps> = ({
                   </div>
                 </div>
 
-                {/* Player Photo / Avatar Silhouette & Name */}
+                {/* Player Photo / Avatar & Name */}
                 <div className="flex flex-col items-center justify-center my-auto z-10 text-center">
-                  <div className="w-20 h-20 rounded-full bg-gradient-to-b from-white/90 to-amber-200 border-2 border-zinc-900 shadow-inner flex items-center justify-center text-3xl font-black text-zinc-900">
-                    {player.name
-                      .split(' ')
-                      .map((n) => n[0])
-                      .join('')}
+                  <div className="w-20 h-20 sm:w-22 sm:h-22 rounded-2xl overflow-hidden border-2 border-zinc-950 shadow-xl bg-zinc-950 flex items-center justify-center relative">
+                    {player.avatarUrl ? (
+                      /* eslint-disable-next-line @next/next/no-img-element */
+                      <img
+                        src={player.avatarUrl}
+                        alt={player.name}
+                        className="w-full h-full object-cover select-none"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-b from-white/90 to-amber-200 flex items-center justify-center text-3xl font-black text-zinc-900">
+                        {player.name
+                          .split(' ')
+                          .map((n) => n[0])
+                          .join('')}
+                      </div>
+                    )}
                   </div>
 
                   <h2 className="mt-2 text-xl font-black text-zinc-950 tracking-tight leading-tight uppercase">
