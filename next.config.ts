@@ -1,14 +1,24 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
+
+const isExport = process.env.NEXT_EXPORT === 'true';
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  ...(isExport
+    ? {
+        output: 'export',
+      }
+    : {
+        cacheComponents: true,
+        partialPrefetching: true,
+      }),
+  images: {
+    unoptimized: true,
+  },
   turbopack: {
     rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
+      '*.css': {
+        loaders: ['@tailwindcss/turbopack'],
+        as: '*.css',
       },
     },
   },

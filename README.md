@@ -79,4 +79,50 @@ npm start
 ### Code Quality & Verification
 ```bash
 npm run lint
+npm run typecheck
 ```
+
+---
+
+## 🌐 Deployment Process
+
+This front-end application can be deployed for **free** across multiple hosting platforms:
+
+### Option 1: GitHub Pages (Automated CI/CD)
+The repository includes an automated GitHub Actions workflow (`.github/workflows/deploy.yml`):
+1. Push your code to your GitHub repository on `main` or `master`.
+2. In your repository on GitHub, navigate to **Settings** $\rightarrow$ **Pages**.
+3. Under **Build and deployment** $\rightarrow$ **Source**, select **GitHub Actions**.
+4. Every push will automatically lint, type-check, build the static bundle (`npm run build:export`), and deploy to GitHub Pages!
+
+### Option 2: Vercel (1-Click / Zero Config)
+The repository includes a ready-to-use [`vercel.json`](./vercel.json):
+1. Push the code to GitHub/GitLab/Bitbucket.
+2. Go to [Vercel](https://vercel.com) and click **"Add New Project"** $\rightarrow$ select this repo.
+3. Vercel automatically detects Next.js and deploys your application globally across edge networks.
+*(Alternatively, run `npx vercel` from your terminal).*
+
+### Option 3: Docker Container (Self-Hosting & Cloud)
+Build and run the lightweight multi-stage Docker container (built on Node.js 22 alpine and served via high-performance Nginx with gzip compression):
+```bash
+# Using Docker Compose
+docker compose up -d
+
+# Or using plain Docker
+docker build -t hedbanz-football .
+docker run -d -p 3000:80 --name hedbanz-football hedbanz-football
+```
+The app will be accessible at [http://localhost:3000](http://localhost:3000).
+
+### Option 4: Cloudflare Pages / Netlify / Static Host
+- **Build command**: `npm run build:export`
+- **Publish directory**: `out`
+
+### Local Production Preview
+Test the production static export bundle locally on your machine:
+```bash
+npm run build:export
+npm run preview
+```
+Open [http://localhost:3000](http://localhost:3000) to test the exact exported bundle.
+

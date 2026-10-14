@@ -1,0 +1,9 @@
+services:
+  hedbanz-football:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hedbanz-football
+    ports:
+      - "3000:80"
+    restart: unless-stopped
