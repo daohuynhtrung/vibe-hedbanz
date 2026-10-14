@@ -94,33 +94,33 @@ export const HeadbandCard: React.FC<HeadbandCardProps> = ({
                     <img
                       src={player.avatarUrl}
                       alt="Secret Player Silhouette"
-                      className="w-full h-full object-cover scale-150"
-                      style={{ filter: 'blur(28px) grayscale(100%)' }}
+                      className="w-full h-full object-cover scale-125"
+                      style={{ filter: 'blur(16px) grayscale(100%)' }}
                     />
                   </div>
                 )}
 
-                {/* Center Mystery Display with Highly Blurred & Decolorized Player Photo */}
+                {/* Center Mystery Display with Lightly Blurred & Decolorized Player Photo */}
                 <div className="flex flex-col items-center justify-center my-auto z-10 text-center">
                   <div className="relative">
                     {/* Portrait Frame containing the blurred & decolorized player photo */}
                     <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden relative border-2 border-amber-400/90 shadow-2xl bg-zinc-950 flex items-center justify-center">
                       {player.avatarUrl ? (
                         <>
-                          {/* Highly Blurred & Decolorized Image */}
+                          {/* Reduced Blur & Decolorized Image */}
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img
                             src={player.avatarUrl}
                             alt="Mystery Footballer Clue"
-                            className="w-full h-full object-cover scale-125 select-none pointer-events-none"
+                            className="w-full h-full object-cover scale-110 select-none pointer-events-none"
                             style={{
-                              filter: 'blur(14px) grayscale(100%) brightness(0.85) contrast(1.25)',
+                              filter: 'blur(5px) grayscale(100%) brightness(0.95) contrast(1.15)',
                             }}
                           />
-                          {/* Mystery Question Overlay Icon */}
-                          <div className="absolute inset-0 flex items-center justify-center pointer-events-none bg-black/20">
-                            <div className="w-11 h-11 rounded-full bg-black/60 backdrop-blur-sm border border-amber-400/80 flex items-center justify-center shadow-lg">
-                              <HelpCircle className="w-6 h-6 text-amber-300 stroke-[2.5]" />
+                          {/* Corner Mystery Question Badge */}
+                          <div className="absolute top-2 right-2 pointer-events-none">
+                            <div className="w-7 h-7 rounded-full bg-black/70 backdrop-blur-md border border-amber-400/80 flex items-center justify-center shadow-lg">
+                              <HelpCircle className="w-4 h-4 text-amber-300 stroke-[2.5]" />
                             </div>
                           </div>
                         </>
