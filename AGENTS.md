@@ -7,3 +7,8 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## User Preferences & Rules
+
+- **GitHub Personal Account**: All new repositories must work with the `github-personal` account (`daohuynhtrung`). When setting up git remotes or pushing new repositories, always use the SSH host `github-personal` (`git@github-personal:daohuynhtrung/<repo-name>.git`), never the work account.
+- **Language Matching**: When the user communicates in English, always answer in English. When the user communicates in Vietnamese, answer in Vietnamese.
